@@ -2,6 +2,41 @@
 #include <cstdlib>
 using namespace std;
 
+void IMT() {
+	system("cls");
+    float bb, tb, LPinggang, imt;
+
+    cout << "Berat badan anda (kg): ";
+    cin >> bb;
+    cout << "Tinggi badan anda (m): ";
+    cin >> tb;
+	cout << endl;
+    
+    imt = bb / (tb* tb);
+
+    cout << "IMT anda adalah: " << imt << endl;
+    
+    if (imt < 18.5) {
+        cout << "Berat badan anda kurang" << endl << endl;
+    } else if (imt >= 18.5 && imt < 22.9) {
+        cout << "Berat badan anda normal" << endl << endl;
+    } else if (imt >= 23 && imt < 24.9) {
+        cout << "Berat badan anda kelebihan" << endl << endl;
+    } else if (imt >= 25 && imt < 29.9) {
+        cout << "Anda obesitas tingkat I" << endl << endl;
+    } else if (imt >= 30) {
+    	cout << "Anda obesitas tingkat II" << endl << endl;
+	} else {
+		cout << "Yang dimasukan salah" << endl << endl;
+	}
+	
+	cin.ignore();
+	
+	cout << "Tabel dan rumus menggunakan referensi dari WHO" << endl;
+	
+    cin.get();
+}
+
 void penurunan_berat(){
     system("cls");
     float bbsekarang, bbtujuan, paling_cepat, paling_lambat;
