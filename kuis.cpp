@@ -106,10 +106,28 @@ void TPG(){
     }
     
     cout<< "Note : rumus didapatkan dari IDAI (Ikatan Dokter Anak Indonesia)";
+	
     cin.get();
 }
 
+void kebutuhanAir(){
+	system("cls");
 
+    float bb, kebutuhan_air;
+
+    cout << "Masukkan berat badan (kg): ";
+    cin >> bb;
+    kebutuhan_air = bb * 0.033;
+    
+    cin.ignore();
+    
+    cout << "Kebutuhan air minum anda dalam sehari adalah " << kebutuhan_air << " liter" << endl << endl;
+
+	cout<< "Note : rumus didapatkan dari IOM (Institute of Medicine)";
+	
+    cin.get();
+    
+}
 
 int main(){
 	int pilihan;
