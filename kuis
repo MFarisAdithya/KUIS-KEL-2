@@ -2,6 +2,45 @@
 #include <cstdlib>
 using namespace std;
 
+void penurunan_berat(){
+    system("cls");
+    float bbsekarang, bbtujuan, paling_cepat, paling_lambat;
+    
+    cout << "Masukan berat badan sekarang (kg): ";
+    cin >> bbsekarang;
+    cout << "Masukan tujuan berat badan yang diinginkan (kg): ";
+    cin >> bbtujuan;
+    cout << endl;
+
+    if (bbtujuan >= bbsekarang) {
+        cout << "Target berat badan harus lebih rendah dari berat badan saat ini" << endl;
+        return;
+    }
+
+    float selisih_berat = bbsekarang - bbtujuan;
+
+    paling_lambat = selisih_berat / 0.5;  
+    paling_cepat = selisih_berat / 1;    
+
+    if (paling_lambat - (int)paling_lambat > 0) {
+        paling_lambat = (int)paling_lambat + 1;
+    }
+    if (paling_cepat - (int)paling_cepat > 0) {
+        paling_cepat = (int)paling_cepat + 1;
+    }
+    
+    cin.ignore();
+    
+    cout << "Untuk mencapai target " << bbtujuan << " kg:" << endl;
+    cout << "Anda membutuhkan waktu " << paling_cepat << " - " << paling_lambat << " minggu" << endl;
+    cout << endl;
+
+    cout << "Note : penurunan badan terlalu cepat itu tidak sehat yaa, disarankan hanya menurunkan 0,5 - 1 kg per minggu " << endl;
+    cout << "Sumber : Alodokter";
+    
+    cin.get();
+}
+
 void TPG(){
 	system("cls");
 	
