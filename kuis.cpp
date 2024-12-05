@@ -3,7 +3,7 @@
 using namespace std;
 
 void IMT() {
-	system("cls");
+    system("cls");
     float bb, tb, LPinggang, imt;
 
     cout << "Berat badan anda (kg): ";
@@ -77,9 +77,9 @@ void penurunan_berat(){
 }
 
 void TPG(){
-	system("cls");
+    system("cls");
 	
-	float tinggi_ayah, tinggi_ibu, tpg_max, tpg_min;
+    float tinggi_ayah, tinggi_ibu, tpg_max, tpg_min;
     char gender;
 
     cout << "Tinggi badan ayah (cm): ";
@@ -111,7 +111,7 @@ void TPG(){
 }
 
 void kebutuhanAir(){
-	system("cls");
+    system("cls");
 
     float bb, kebutuhan_air;
 
@@ -123,7 +123,7 @@ void kebutuhanAir(){
     
     cout << "Kebutuhan air minum anda dalam sehari adalah " << kebutuhan_air << " liter" << endl << endl;
 
-	cout<< "Note : rumus didapatkan dari IOM (Institute of Medicine)";
+    cout<< "Note : rumus didapatkan dari IOM (Institute of Medicine)";
 	
     cin.get();
     
